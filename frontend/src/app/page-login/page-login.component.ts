@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
+import {Router} from "@angular/router";
+
+
 
 @Component({
   selector: 'app-page-login',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageLoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private _router: Router ) { }
 
   ngOnInit() {
   }
+  irAInfo() {
+      const url = [
+        'inicio'
+      ];
+      this._router.navigate(url);
+      location.reload(true);
+    }
 
 }

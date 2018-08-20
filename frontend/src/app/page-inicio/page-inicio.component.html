@@ -1,3 +1,27 @@
-<p>
-  page-inicio works!
-</p>
+<ul>
+  <li>
+    <a [routerLink]="['../inicio/usuario/usuario.id']">Mis Datos</a>-
+  </li>
+  <li>
+    <a [routerLink]="['../inicio/usuario/usuario.id/laser/laser.id']">Nuevo Laser</a>-
+  </li>
+  <li>
+    <a [routerLink]="['../inicio/usuario/usuario.id/laser/laser.id/alarma']">Agregar Alarma</a>-
+  </li>
+  <li style="float:right">
+    <a [routerLink]="['/inicio']"><img src="https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579_960_720.png" border="1"  width="50" height="50"></a>
+  </li>
+  <li style="float:right">
+    <button mat-button class="btn" [matMenuTriggerFor]="menu">Usuario</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="irAInfoDatos()">Mis Datos</button>
+      <button mat-menu-item (click)="irAInfo()">Salir</button>
+    </mat-menu>
+    <h5><font color="#AAAAAA">{{Usuario.nombre}}</font> </h5>
+  </li>
+</ul>
+<div align="center" class="container">
+  <!-- <app-usuario></app-usuario> -->
+  <!-- <app-laser></app-laser> -->
+  <app-agregar-laser></app-agregar-laser>
+</div>

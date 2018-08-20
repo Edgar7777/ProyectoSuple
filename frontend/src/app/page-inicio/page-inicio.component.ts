@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-page-inicio',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageInicioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private _router: Router ) { }
 
   ngOnInit() {
   }
+
+  irAInfo() {
+      const url = [
+        'home'
+      ];
+      this._router.navigate(url);
+      location.reload(true);
+    }
+
+    irAInfoDatos() {
+        const url = [
+          'inicio','usuario',':id'
+        ];
+        this._router.navigate(url);
+        location.reload(true);
+      }
 
 }

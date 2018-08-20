@@ -7,7 +7,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
-
+import {MatMenuModule} from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card';
 
 
 import { AppComponent } from './app.component';
@@ -16,6 +17,12 @@ import { PageLoginComponent } from './page-login/page-login.component';
 import { PageRegistroComponent } from './page-registro/page-registro.component';
 import { PageHomeComponent } from './page-home/page-home.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { LaserComponent } from './laser/laser.component';
+import { AlarmaComponent } from './alarma/alarma.component';
+import { LugarComponent } from './lugar/lugar.component';
+import { SeccionComponent } from './seccion/seccion.component';
+import { AgregarLaserComponent } from './agregar-laser/agregar-laser.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +31,13 @@ import { CarouselComponent } from './carousel/carousel.component';
     PageLoginComponent,
     PageRegistroComponent,
     PageHomeComponent,
-    CarouselComponent
+    CarouselComponent,
+    UsuarioComponent,
+    LaserComponent,
+    AlarmaComponent,
+    LugarComponent,
+    SeccionComponent,
+    AgregarLaserComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +45,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     MatButtonToggleModule,
     MatButtonModule,
     MatInputModule,
+    MatMenuModule,
+    MatCardModule,
      MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(
       AppRoutes,
