@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-agregar-laser',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AgregarLaserComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private _router: Router ) { }
 
   ngOnInit() {
   }
+  irAInfo() {
+      const url = [
+        'inicio',`id`,'laser'
+      ];
+      this._router.navigate(url);
+      location.reload(true);
+    }
 
 }

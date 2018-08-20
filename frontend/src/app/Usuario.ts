@@ -4,7 +4,7 @@ export class Usuario{
     nombre:string;
     apellido:string;
     contrasenia:string;
-    email:string;
+    email ?: string;
     telefono:string;
     lasers:Laser[];
 }

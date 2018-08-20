@@ -2,9 +2,6 @@
   <h2 for="form1" class="lbl">AGREGAR LASER</h2>
 
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="ID Laser" value="">
-  </mat-form-field>
-  <mat-form-field class="example-full-width">
     <input matInput placeholder="codigo Laser" value="">
   </mat-form-field>
   <br />
@@ -18,6 +15,7 @@
   <mat-form-field class="example-full-width">
     <input matInput placeholder="Fecha Fin" value="">
   </mat-form-field>
+  <br />
   <mat-form-field class="example-full-width">
     <input matInput placeholder="Hora Inicio" value="">
   </mat-form-field>
@@ -26,7 +24,6 @@
   </mat-form-field>
 
   <br /><br /><br />
-    <button mat-button>Agregar</button>
+    <button mat-button (click)="irAInfo()">Agregar</button>
     <br /><br /><br />
-
 </div>
