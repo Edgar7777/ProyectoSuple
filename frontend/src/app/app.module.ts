@@ -6,6 +6,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -30,6 +31,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     BrowserAnimationsModule,
     MatButtonToggleModule,
     MatButtonModule,
+    MatInputModule,
      MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(
       AppRoutes,

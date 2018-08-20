@@ -1,3 +1,41 @@
-<p>
-  page-registro works!
-</p>
+<div align="center" class="container">
+  <h2 for="form1" class="lbl">REGISTRO USUARIO</h2>
+  <ul>
+    <li style="float:right">
+      <a [routerLink]="['/home']"><img src="https://rescue-one.com/wp-content/uploads/2015/05/HOME.png" border="1"  width="50" height="50"></a>
+    </li>
+    <li style="float:right">
+      <h5><font color="#AAAAAA">Home</font> </h5>
+    </li>
+  </ul>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Nombre" value="">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Apellido" value="">
+  </mat-form-field>
+  <br />
+  <mat-form-field class="example-full-width">
+    <input matInput type="password" placeholder="Contraseña" value="">
+  </mat-form-field>
+  <br />
+  <mat-form-field class="example-full-width">
+    <input type="password" matInput placeholder="Confirmar Contraseña" value="">
+  </mat-form-field>
+  <br />
+  <br />
+  <mat-form-field class="example-full-width">
+    <input type="email" matInput placeholder="Email" value="">
+  </mat-form-field>
+  <br />
+  <mat-form-field class="example-full-width">
+    <input type="tel" matInput placeholder="Telefono" value="">
+  </mat-form-field>
+
+  <br /><br /><br />
+    <button mat-button>Registrar</button>
+    <br /><br /><br />
+
+    <p><a [routerLink]="['/login']">Iniciar Sesiòn con una Cuenta existente</a></p>
+
+</div>
