@@ -1,7 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import {RouterModule} from "@angular/router";
 import {AppRoutes} from './rutas/app.routes';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 import { AppComponent } from './app.component';
@@ -9,6 +14,7 @@ import { PageInicioComponent } from './page-inicio/page-inicio.component';
 import { PageLoginComponent } from './page-login/page-login.component';
 import { PageRegistroComponent } from './page-registro/page-registro.component';
 import { PageHomeComponent } from './page-home/page-home.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +22,15 @@ import { PageHomeComponent } from './page-home/page-home.component';
     PageInicioComponent,
     PageLoginComponent,
     PageRegistroComponent,
-    PageHomeComponent
+    PageHomeComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MatButtonToggleModule,
+    MatButtonModule,
+     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(
       AppRoutes,
       {

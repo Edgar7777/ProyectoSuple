@@ -1,3 +1,26 @@
-<p>
-  page-login works!
-</p>
+<div align="center"  class="container">
+  <h2 for="form1" class="lbl">LOGIN</h2>
+  <ul>
+      <li style="float:right">
+        <a [routerLink]="['/home']"><img src="https://rescue-one.com/wp-content/uploads/2015/05/HOME.png" border="1"  width="50" height="50"></a>
+      </li>
+      <li style="float:right">
+        <h5><font color="#AAAAAA">Home</font> </h5>
+      </li>
+  </ul>
+  <div class="md-form">
+    <input mdbInputDirective type="text" id="form1" class="form-control">
+    <label align="center" for="form1" class="">Nombre</label>
+  </div>
+  <br /><br />
+  <div class="md-form">
+    <input mdbInputDirective type="password" id="form1" class="form-control">
+    <label align="center" for="form1" class="">Contraseña</label>
+  </div>
+<br /><br /><br />
+  <button mat-button>Iniciar Sesion</button>
+  <br /><br /><br />
+
+  <p><a [routerLink]="['/registro']">Crear cuenta</a></p>
+
+</div>
